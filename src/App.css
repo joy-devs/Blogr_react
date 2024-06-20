@@ -1,0 +1,316 @@
+
+* {
+  margin: 0;
+}
+
+
+.header {
+  background-image: url("../assets/images/bg-pattern-intro-desktop.svg");
+  text-align: center;
+  background-color: #db4924;
+  padding: 1.8rem;
+  color: white;
+  border-bottom-left-radius: 35px;
+  transition: transform 0.3s;
+}
+.header:hover{
+  transform: scale(1.05);
+}
+
+
+.header-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-section ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-section li {
+  margin: 0 1rem;
+  padding: 3px;
+}
+
+.header-section a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.header .head-title {
+  margin-top: 2rem;
+}
+
+.head-title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.head-title p {
+  margin-bottom: 2rem;
+}
+
+.head-title button {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  color: #d84f2c;
+  background-color: white;
+  padding: 0.4rem 1.5rem;
+  border-radius:20px ;
+}
+
+.head-title button:hover {
+  background-color: #ff796b;
+  color: white;
+}
+
+
+.img {
+  object-fit: cover;
+  height: 80px;
+}
+
+
+.pop_down .pop_down-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 2px;
+  border-radius: 4px;
+  list-style-type: none;
+  padding: 10px;
+  z-index: 1;
+}
+
+.pop_down-content li {
+  padding: 4px 0;
+}
+
+.pop_down-content li a {
+  color: black;
+  text-decoration: none;
+}
+
+.pop_down-content li a:hover {
+  text-decoration: none;
+}
+
+.pop_down:hover .pop_down-content {
+  display: block;
+}
+
+
+.sign {
+  
+  padding: 10px;
+  margin-left: 200px;
+}
+
+.sign_up {
+  padding: 8px;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  color: #d84f2c;
+  background-color: white;
+  padding: 0.4rem 1.5rem;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.icon {
+  display: none;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  padding-top: 15px;
+}
+
+
+.head {
+  padding-left: 450px;
+  margin-top: 18px;
+}
+
+
+.design {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+}
+
+.design:hover{
+  transform: scale(1.05);
+}
+
+
+.content {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.design-head{
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.design .first-head .heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.design .first-head p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  float: right;
+}
+
+.state {
+  margin: 0;
+   align-items: center;
+   display:flex ;
+   gap: 20px;
+   height: 280px; 
+   border-bottom-left-radius: 80px;
+   border-top-right-radius: 80px;
+   color:rgb(240, 219, 219) ;
+   border: 1px solid rgb(29, 29, 34);
+   background-color: rgb(44, 44, 78);
+   margin-bottom: 20px;
+   /* position: relative; */
+}
+.state img{
+  /* position:absolute; */
+  margin-bottom: 20px;
+}
+
+
+.id-illustration {
+  width: 600px;
+  height: auto;
+}
+.tool{
+  color: black;
+  display: flex;
+}
+
+.tool img{
+  height: 400px;
+  width: 330;
+}
+.tool-content{
+  margin-top: 20px;
+}
+
+.phone {
+  height: 500px;
+}
+
+.lap {
+  width: 600px;
+}
+.contents {
+  padding: 40px;
+  line-height: 1.7;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top-right-radius: 80px;
+  height: 200px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  margin: 1rem;
+}
+
+.footer-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content li {
+  margin: 0.5rem 0;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header,
+  .design,
+  .tool,
+  .state {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header nav,
+  .register,
+  .header-title {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .id-illustration {
+    width: 400px;
+  }
+
+  .head {
+    padding-left: 50px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .lap {
+    width: 400px;
+    margin: 10px;
+  }
+}
+
+
+
